@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Commercial Pricing &amp; Congruence Diagnostic Engine&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--navy: #1b365d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--navy-dark: #10223d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent: #2563eb;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg: #f8fafc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card-bg: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border: #e2e8f0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text: #1e293b;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text-muted: #64748b;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--green-bg: #dcfce7;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--green-text: #15803d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--amber-bg: #fef3c7;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--amber-text: #b45309;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--red-bg: #fee2e2;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--red-text: #b91c1c;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>* { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: var(--bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, var(--navy), var(--navy-dark));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 28px 32px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>header h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>header p { color: #cbd5e1; font-size: 0.95rem; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-tabs {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 2px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.95rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px 8px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-btn:hover { color: var(--navy); background-color: #e2e8f0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-btn.active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--navy);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 3px solid var(--navy);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-content { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-content.active { display: block; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 1px 3px rgba(0,0,0,0.05);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--navy);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card p.desc {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-group {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fafbfc;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-group h3 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.05rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--navy);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.question-row {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #edf2f7;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.question-row:last-child { border-bottom: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.question-row label { font-size: 0.9rem; flex: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.question-row select {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 6px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 130px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>table {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-collapse: collapse;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.88rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>th, td {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>th {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--navy);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>td input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 6px 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.88rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>td.num { text-align: right; font-variant-numeric: tabular-nums; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 3px 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-green { background: var(--green-bg); color: var(--green-text); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-amber { background: var(--amber-bg); color: var(--amber-text); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag-red { background: var(--red-bg); color: var(--red-text); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid-2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metric-box {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fafbfc;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metric-box .label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metric-box .val { font-size: 1.5rem; font-weight: 700; color: var(--navy); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.callout {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-left: 4px solid var(--navy);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #f1f5f9;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 0 6px 6px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Agency Moat &amp; Commercial Congruence Engine&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Operational Diagnostic &amp; Retainer Leakage Assessment for High-Margin Packaging&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav class="nav-tabs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="tab-btn active" onclick="showTab('tab-moat')"&gt;1. Moat Identification&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="tab-btn" onclick="showTab('tab-misalignment')"&gt;2. Margin Leak Checks&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="tab-btn" onclick="showTab('tab-leakage')"&gt;3. Client EHR Forensics&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="tab-btn" onclick="showTab('tab-readout')"&gt;4. Executive Readout&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- TAB 1: MOAT INTAKE SCORECARD --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="tab-moat" class="tab-content active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Pillar Assessment: Identify True Operational Moat&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="desc"&gt;Score statements from 1 (Strongly Disagree) to 5 (Strongly Agree) based on delivery realities.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="score-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Pillar A: Velocity &amp; Turnkey Asset Execution &lt;span id="sub-a"&gt;0 / 20&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;A1. Competitive moat is speed, volume, and predictable turnaround.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-a" onchange="runDiagnostics()"&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="2"&gt;2 - Disagree&lt;/option&gt;&lt;option value="1"&gt;1 - Strongly Disagree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;A2. Delivery heavily relies on reusable workflows, templates, and automation.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-a" onchange="runDiagnostics()"&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;option value="4" selected&gt;4 - Agree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="2"&gt;2 - Disagree&lt;/option&gt;&lt;option value="1"&gt;1 - Strongly Disagree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;A3. Halving production time delivers full value without extra client calls.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-a" onchange="runDiagnostics()"&gt;&lt;option value="5" selected&gt;5 - Strongly Agree&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="2"&gt;2 - Disagree&lt;/option&gt;&lt;option value="1"&gt;1 - Strongly Disagree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;A4. Hired to eliminate bottleneck capacity, not to craft novel strategy.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-a" onchange="runDiagnostics()"&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;option value="4" selected&gt;4 - Agree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="2"&gt;2 - Disagree&lt;/option&gt;&lt;option value="1"&gt;1 - Strongly Disagree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="score-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Pillar B: Technical Infrastructure &amp; Dev/Data Moat &lt;span id="sub-b"&gt;0 / 20&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;B1. Core deliverable requires deep setup (CDP, tracking, data pipelines, APIs).&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-b" onchange="runDiagnostics()"&gt;&lt;option value="1"&gt;1 - Strongly Disagree&lt;/option&gt;&lt;option value="2" selected&gt;2 - Disagree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;B2. Complexity is invisible until broken systems risk client revenue.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-b" onchange="runDiagnostics()"&gt;&lt;option value="1"&gt;1 - Strongly Disagree&lt;/option&gt;&lt;option value="2" selected&gt;2 - Disagree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;B3. Client tickets are technical troubleshooting, not subjective design edits.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-b" onchange="runDiagnostics()"&gt;&lt;option value="1" selected&gt;1 - Strongly Disagree&lt;/option&gt;&lt;option value="2"&gt;2 - Disagree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;B4. High switching costs; maintenance scales with data/spend, not hours.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-b" onchange="runDiagnostics()"&gt;&lt;option value="1"&gt;1 - Strongly Disagree&lt;/option&gt;&lt;option value="2" selected&gt;2 - Disagree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="score-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Pillar C: Strategic Brand &amp; Executive Advisory Moat &lt;span id="sub-c"&gt;0 / 20&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;C1. Clients hire us for commercial positioning and executive steering counsel.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-c" onchange="runDiagnostics()"&gt;&lt;option value="1"&gt;1 - Strongly Disagree&lt;/option&gt;&lt;option value="2" selected&gt;2 - Disagree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;C2. Value is driven by senior advisory access rather than asset volume.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-c" onchange="runDiagnostics()"&gt;&lt;option value="1" selected&gt;1 - Strongly Disagree&lt;/option&gt;&lt;option value="2"&gt;2 - Disagree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;C3. Frequent ad-hoc strategic check-ins, executive calls, and steering debates.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-c" onchange="runDiagnostics()"&gt;&lt;option value="1"&gt;1 - Strongly Disagree&lt;/option&gt;&lt;option value="2" selected&gt;2 - Disagree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;C4. Adding production hours without strategic direction erodes client retention.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select class="sc-c" onchange="runDiagnostics()"&gt;&lt;option value="1" selected&gt;1 - Strongly Disagree&lt;/option&gt;&lt;option value="2"&gt;2 - Disagree&lt;/option&gt;&lt;option value="3"&gt;3 - Neutral&lt;/option&gt;&lt;option value="4"&gt;4 - Agree&lt;/option&gt;&lt;option value="5"&gt;5 - Strongly Agree&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- TAB 2: MISALIGNMENT CHECKS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="tab-misalignment" class="tab-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Commercial Misalignment Checks (Forensic Leaks)&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="desc"&gt;Rate severity for each structural pricing trap: 0 = Protected, 2 = Moderate Bleed, 4 = Critical Trap.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;strong&gt;M1. The Efficiency Penalty:&lt;/strong&gt; Fast execution capacity paired with hourly/time billing. Working faster slashes billable revenue.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select class="leak-input" onchange="runDiagnostics()"&gt;&lt;option value="0"&gt;0 - Protected&lt;/option&gt;&lt;option value="2"&gt;2 - Moderate&lt;/option&gt;&lt;option value="4" selected&gt;4 - Critical Trap&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;strong&gt;M2. The Architecture Subsidy:&lt;/strong&gt; Technical onboarding &amp; complex dev bundled into monthly retainer without setup fees.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select class="leak-input" onchange="runDiagnostics()"&gt;&lt;option value="0" selected&gt;0 - Protected&lt;/option&gt;&lt;option value="2"&gt;2 - Moderate&lt;/option&gt;&lt;option value="4"&gt;4 - Critical Trap&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;strong&gt;M3. The White-Glove Bleed:&lt;/strong&gt; High-touch strategic advisory provided under flat creative fees with unlimited calls/Slack.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select class="leak-input" onchange="runDiagnostics()"&gt;&lt;option value="0"&gt;0 - Protected&lt;/option&gt;&lt;option value="2" selected&gt;2 - Moderate&lt;/option&gt;&lt;option value="4"&gt;4 - Critical Trap&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;strong&gt;M4. Scope Drag Deadband:&lt;/strong&gt; Retainers lack step-up volume boundaries; +20% to +40% extra work pays \$0 incremental fee.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select class="leak-input" onchange="runDiagnostics()"&gt;&lt;option value="0"&gt;0 - Protected&lt;/option&gt;&lt;option value="2"&gt;2 - Moderate&lt;/option&gt;&lt;option value="4" selected&gt;4 - Critical Trap&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;strong&gt;M5. Competitor Echo Pricing:&lt;/strong&gt; Rate sheet was copied from peer agencies rather than indexed to delivery contribution margin.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select class="leak-input" onchange="runDiagnostics()"&gt;&lt;option value="0"&gt;0 - Protected&lt;/option&gt;&lt;option value="2" selected&gt;2 - Moderate&lt;/option&gt;&lt;option value="4"&gt;4 - Critical Trap&lt;/option&gt;&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- TAB 3: CLIENT EHR CALCULATOR --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="tab-leakage" class="tab-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Client EHR Forensics (Account-by-Account)&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="desc"&gt;Enter representative accounts to identify Effective Hourly Rates (EHR) and scope drag.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Account Name&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Monthly Retainer (\$)&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Stated Cap (Hrs)&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Actual Hours Logged&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Blended Cost / Hr (\$)&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Stated Rate&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Effective Rate (EHR)&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Realized Margin (\$)&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Margin Delta %&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tbody id="client-tbody"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="text" value="Alpha Corp" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="fee" value="5000" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="cap-hrs" value="35" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="act-hrs" value="68" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="cost-hr" value="65" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num nom-rate"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num ehr-rate"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num net-margin"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num margin-delta"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="text" value="Beta Dynamics" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="fee" value="7500" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="cap-hrs" value="50" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="act-hrs" value="45" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="cost-hr" value="70" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num nom-rate"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num ehr-rate"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num net-margin"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num margin-delta"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="text" value="Gamma Brands" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="fee" value="4000" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="cap-hrs" value="30" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="act-hrs" value="58" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="number" class="cost-hr" value="60" oninput="runDiagnostics()"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num nom-rate"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num ehr-rate"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num net-margin"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td class="num margin-delta"&gt;-&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- TAB 4: EXECUTIVE READOUT --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="tab-readout" class="tab-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Executive Diagnostic Readout&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="desc"&gt;Automated analysis mapping operational strengths to pricing guardrails.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="metric-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="label"&gt;Assessed Operational Moat&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="val" id="out-moat"&gt;-&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="metric-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="label"&gt;Misalignment &amp; Leak Severity&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="val" id="out-misalign"&gt;-&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid-2" style="margin-top: 16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="metric-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="label"&gt;Identified Monthly Retainer Leakage&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="val" id="out-leakage" style="color: var(--red-text);"&gt;-&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="metric-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="label"&gt;Recommended Metric Vehicle&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="val" id="out-vehicle" style="font-size: 1.15rem;"&gt;-&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="callout" id="out-prescription"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Evaluating diagnostic data...</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function showTab(tabId) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.tab-content').forEach(el =&gt; el.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.tab-btn').forEach(el =&gt; el.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById(tabId).classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>event.currentTarget.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function getSum(selector) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let sum = 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll(selector).forEach(sel =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>sum += parseInt(sel.value, 10) || 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>return sum;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function runDiagnostics() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// 1. Calculate Moat Scores</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const scoreA = getSum('.sc-a');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const scoreB = getSum('.sc-b');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const scoreC = getSum('.sc-c');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('sub-a').innerText = `${scoreA} / 20`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('sub-b').innerText = `${scoreB} / 20`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('sub-c').innerText = `${scoreC} / 20`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>let dominantMoat = "Pillar A: High-Velocity Throughput";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let prescribedVehicle = "Asset Production Tiers + Turnkey Sprints";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let prescriptionText = "Your strength is rapid throughput. &lt;strong&gt;Stop selling open-ended hours or flat blended retainers.&lt;/strong&gt; Package deliverables into standard asset batches with fixed turnaround SLAs. Institute an explicit 48-hour rush fee (+50%) and enforce revision limits.";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (scoreB &gt; scoreA &amp;&amp; scoreB &gt;= scoreC) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>dominantMoat = "Pillar B: Technical Infrastructure";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>prescribedVehicle = "Two-Phase Architecture (Audit Sprint + Usage Retainer)";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>prescriptionText = "Your strength is deep technical integration. &lt;strong&gt;Stop rolling implementation into monthly maintenance.&lt;/strong&gt; Bill upfront setup as a dedicated engineering sprint (\$3,500–\$7,500), and tie monthly retainers to data/spend volume thresholds.";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (scoreC &gt; scoreA &amp;&amp; scoreC &gt; scoreB) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>dominantMoat = "Pillar C: Strategic Advisory";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>prescribedVehicle = "Advisory Retainer + Governance Seats";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>prescriptionText = "Your strength is partner-level executive counsel. &lt;strong&gt;Stop subsidizing client meetings out of production rates.&lt;/strong&gt; Establish fixed monthly advisory retainers with capped steering sessions; unbundle tactical asset production into separate line items.";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// 2. Misalignment Bleed Score</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const leakScore = getSum('.leak-input');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let leakLabel = "Operationally Aligned (Healthy)";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let leakTag = "tag-green";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (leakScore &gt; 12) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>leakLabel = `Severe Dysmorphia (${leakScore}/20)`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>leakTag = "tag-red";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (leakScore &gt; 4) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>leakLabel = `Moderate Margin Bleed (${leakScore}/20)`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>leakTag = "tag-amber";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// 3. Client Leakage Forensics</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let totalLeakage = 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const rows = document.querySelectorAll('#client-tbody tr');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>rows.forEach(row =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const fee = parseFloat(row.querySelector('.fee').value) || 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const capHrs = parseFloat(row.querySelector('.cap-hrs').value) || 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const actHrs = parseFloat(row.querySelector('.act-hrs').value) || 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const costHr = parseFloat(row.querySelector('.cost-hr').value) || 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const nomRate = capHrs &gt; 0 ? (fee / capHrs) : 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const ehrRate = actHrs &gt; 0 ? (fee / actHrs) : 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const netMargin = fee - (actHrs * costHr);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const deltaPct = nomRate &gt; 0 ? ((ehrRate - nomRate) / nomRate) * 100 : 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>row.querySelector('.nom-rate').innerText = `$${nomRate.toFixed(2)}/hr`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>row.querySelector('.ehr-rate').innerText = `$${ehrRate.toFixed(2)}/hr`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>row.querySelector('.net-margin').innerText = `$${netMargin.toLocaleString('en-US', {minimumFractionDigits: 2})}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const deltaCell = row.querySelector('.margin-delta');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>deltaCell.innerText = `${deltaPct &gt;= 0 ? '+' : ''}${deltaPct.toFixed(1)}%`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>deltaCell.className = `num margin-delta ${deltaPct &lt; -15 ? 'tag-red' : (deltaPct &lt; 0 ? 'tag-amber' : 'tag-green')}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Sum leakage on scope creep (where actual hours exceed stated cap)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (actHrs &gt; capHrs) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>totalLeakage += (actHrs - capHrs) * costHr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// 4. Update Readout</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('out-moat').innerText = dominantMoat;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('out-misalign').innerHTML = `&lt;span class="tag ${leakTag}"&gt;${leakLabel}&lt;/span&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('out-vehicle').innerText = prescribedVehicle;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('out-leakage').innerText = `-$${totalLeakage.toLocaleString('en-US', {minimumFractionDigits: 2})} / mo`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('out-prescription').innerHTML = prescriptionText;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>window.addEventListener('DOMContentLoaded', runDiagnostics);</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
